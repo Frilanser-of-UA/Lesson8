@@ -1,0 +1,442 @@
+/* ===============Продключаем шрифты с сайта https://fonts.google.com============*/
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lora:regular,700&display=swap");
+/* ===============Продключаем шрифты файлами	============*/
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('../fonts/') format('woff2'),
+		 url('../fonts/PlayfairDisplay-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('../fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+		 url('../fonts/PlayfairDisplay-BoldItalic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+		 url('../fonts/PlayfairDisplay-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+/* ===============================Стили обнуления =====================================*/
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+/* --------------- */
+body{
+	color: #222831;
+	line-height: 1;
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+}
+/* ===============================Задаем стили header=====================================*/
+.header {
+	background-color: aliceblue;
+	padding: 20px 30px 20px 30px;
+	margin: 50px auto;
+	max-width: 1170px;
+}
+/* ===============================Задаем стили логотипа =====================================*/
+.header .header__logo p, .footer__logo p{
+	font-family: 'Playfair Display';
+	font-size: 52px;
+	line-height: 128%;
+	font-weight: 700;
+	color: #10375C;
+	letter-spacing: 15px;
+	text-shadow: 1px 1px 1px black;
+	margin-left: 20px;
+}
+.header .header__logo p:hover{
+	letter-spacing: 25px;
+}
+.header .header__logo p span, .footer__logo p span{
+	color: brown;
+	text-transform: uppercase;
+	text-shadow: 4px 2px 1px grey;
+
+}
+/* ===============================Задаем стили логотипа =====================================*/
+/* ===============================Задаем стили меню =====================================*/
+.nav {
+	background-color: ivory;
+	margin: 20px;
+}
+.nav li{
+	text-align: center;
+	display: inline;
+}
+.nav li a {
+	display: inline-block;
+	margin: 10px;
+	padding: 5px;
+	line-height: 200%;
+	font-weight: bold;
+	color: #222831;
+	text-decoration: underline;
+	border: solid 2px rgb(103, 9, 185);
+	border-radius: 10px;
+}
+.nav li a:hover{
+	color: darkred;
+	border: solid 2px #10375C;
+	text-decoration: none;
+	background-color: #6c6666;
+}
+/* ===============================Задаем стили меню =====================================*/
+.user{
+background-color: khaki;
+text-align: right;
+}
+.user__login , .user__singup {
+	display: inline-block;
+	border: solid 1px darkgrey;
+	margin-right: 20px;
+}
+.user p{
+	text-align: right;
+	color: #FF5722;
+	font-weight: bold;
+	padding: 15px;
+}
+/* ===============================Задаем стили header=====================================*/
+/* ===============================Задаем стили контента=====================================*/
+.main {
+	background-color: #FFFFFF;
+}
+.main__title h2{
+	font-family: "Lora";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 52px;
+	line-height: 129%;
+	color: rgba(16, 55, 92, 0.8);
+	text-indent: 20px;
+}
+.main__title span{
+color: rgb(221, 44, 0, 1.0);
+}
+.main__text{
+	overflow: hidden;
+	max-width: 500px;
+	max-height: 200px;
+	border: solid 1px #1d1a1a;
+	padding: 10px;
+	border-radius: 10px;
+	margin-left: 50px;
+}
+.main__text:hover{
+	box-shadow: 20px 5px 0 #3C93D5;
+}
+.main__text p {
+	text-indent: 20px;
+	color: #1d1a1a;
+	font-weight: 500;
+	word-spacing: 5px;
+	overflow: auto;
+	margin-right: -25px;
+	height: 200px;
+	padding: 10px;
+}
+
+.main__img {
+	margin: 20px;
+}
+.img__image {
+	max-width: 100%;
+	margin-bottom: -300px;
+	opacity: 0.5;
+}
+/* ===============================Задаем стили тени=====================================*/
+.main__shadow p{
+	margin: 60px 20px 60px 20px;
+	color: rgba(13, 44, 74, 1.0);
+	line-height: 150%;
+	font-size: 68px;
+	height: 250px;
+	text-align: center;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	font-family: 'Playfair Display';
+	font-weight: bold;
+	text-shadow: -5px 5px 0px  rgba(13, 44, 74, 0.8), -10px 10px 0px  rgba(13, 44, 74, 0.6), -15px 15px 0px  rgba(13, 44, 74, 0.4);
+}
+.main__more-text {
+	padding: 10px;
+	margin: 50px 20px;
+	max-width: 50%;
+	text-align: left;
+	text-indent: 15px;
+	font-size: 24px;
+}
+.main__more-text span{
+	background-color: darkkhaki;
+	border: solid 1px black;
+	margin: 150px;
+	border-radius: 10px;
+
+}
+.main__button{
+	margin: 150px 0px;
+	padding: 50px;
+}
+.main__button a{
+	display: block;
+	background-color: #FF5722;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 18px;
+	max-width: 349px;
+	text-align: center;
+	line-height: 21px;
+	padding: 17px 15px;
+	color: #FFFFFF;
+	border-radius: 5px;
+}
+.main__button a:hover{
+	background-color: #5522cc;
+}
+.main__box{
+	max-width: 400px;
+	margin: 50px auto;
+	outline: solid 2px red;
+	box-shadow: 13px 16px #989898, 23px 31px #6c6666, 0px 0px 40px rgba(0, 0, 0, .5) inset;
+}
+.main__box p{
+	line-height: 96px;
+	font-weight:100;
+	font-size: 48px;
+	text-align: center;
+	padding: 150px 0px;
+}
+.main__circle{
+margin: 150px auto;
+max-width: 400px;
+}
+.main__circle img{
+max-width: 200px;
+height: 200px;
+border: solid 10px darkgray;
+border-radius: 50%;
+display: block;
+overflow: hidden;
+
+}
+.main__circle img:hover{
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.4) inset, 0px 4px 27px 17px rgb(0, 0, 0, 0.6);
+}
+.lincks{
+	max-width: 1170px;
+	background-color: #989898;
+	margin: 0 auto;
+	padding: 150px 20px;
+	margin-bottom: 100px;
+	border-radius: 15px;
+	border:3px solid #222831
+}
+.lincks a {
+	display: inline-block;
+	margin-right: 50px;
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 10px 20px;
+	border: 1px solid transparent;
+}
+.lincks a:last-child{
+	margin-right: 0px;
+}
+.lincks a:first-child:hover{
+	color: rgb(103, 9, 185);
+	background-color: red;
+	border-radius: 5%;
+	border: 1px solid #6c6666;
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.4) inset, 0px 4px 27px 17px rgb(0, 0, 0, 0.6);
+}
+.lincks a:nth-child(2):active{
+	color: rgba(13, 44, 74, 0.8);
+	background-color: rgb(0, 255, 213);
+	border-radius: 5%;
+	border: 1px solid #6c6666;
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.4) inset, 0px 4px 27px 17px rgb(0, 0, 0, 0.6);
+}
+.lincks a:nth-child(3):visited{
+	color: rgba(238, 238, 248, 0.8);
+	
+}
+.lincks a:nth-child(4):focus{
+	color: rgba(13, 44, 74, 0.8);
+	background-color: rgb(0, 255, 213);
+	border-radius: 5%;
+	border: 1px solid #6c6666;
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.4) inset, 0px 4px 27px 17px rgb(0, 0, 0, 0.6);
+}
+.target__text{
+	max-width: 500px;
+	max-height:500px;
+	margin: 0 auto;
+	margin-bottom: 150px;
+	border: 2px solid black;
+	border-radius: 50%;
+	background: rgb(167, 167, 173);
+	display: none;
+}
+.target__text p{
+	padding: 40% 30px;
+	font-size: 20px;
+	line-height: 1.2;
+	text-align: center;
+	color: rgb(250, 201, 201);
+
+}
+.target__text:target{
+	display: block;
+}
+.target__text p a{
+	display: block;
+	max-width: 150px;
+	padding: 5px;
+	border-radius: 15px;
+	border: 1px solid #1d1a1a;
+	background-color: #3C93D5;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.target__text p:first-line{
+	color: #5522cc;
+}
+.target__text p:first-letter{
+	background-color: #3C93D5;
+}
+.before-after, .list{
+	max-width: 1170px;
+	margin: 100px auto;
+	background-color: #989898;
+	border-radius: 20px;
+	padding: 50px 30px;
+	font-size: 20px;
+	text-indent: 20px;
+	line-height: 1.4;
+	letter-spacing: 2px;
+	font-weight: 700;
+}
+.before-after p::before, .before-after p::after{
+	content: "";
+	width: 30%;
+	height: 3px;
+	display: block;
+	background-color: #FF5722;
+	margin: 10px auto;
+}
+.list{
+	max-width: 1170px;
+	margin: 100px auto;
+	background-color: #fce0e0;
+	border-radius: 20px;
+	padding: 50px 30px;
+	font-size: 16px;
+	text-indent: 20px;
+	line-height: 1.4;
+	letter-spacing: 2px;
+	font-weight: 700;
+}
+.list ul li{
+	padding: 0px 0px 0px 30px;
+	margin: 0px 0px 40px 0px;
+
+}
+.list ul li:last-child{
+	margin-bottom: 0px;
+}
+.list li::before{
+	content: "";
+	background: url('../img/4.png') 0 0 no-repeat;
+	width: 25px;
+	height: 19px;
+	display: inline-block;
+	margin: 0px 5px 0px -50px;
+}
+/* ===============================Задаем стили контента=====================================*/
+/* ===============================Задаем стили footer=====================================*/
+.footer {
+	background: #0D2C4A;
+	max-width: 1170px;
+	margin: 20px auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-top-left-radius: 55px;
+	border-bottom-right-radius: 55px;
+}
+.footer__logo{
+	margin-bottom: 30px;
+}
+.footer__logo p{
+	color: #FFFFFF;
+	font-family: "Lora";
+}
+.footer__text{
+	margin-bottom: 30px;
+}
+.footer__text p{
+	color: #F8F8F8;
+	line-height: 162.5%;
+
+}
+.footer__contact p, a{
+	color: #F8F8F8;
+	line-height: 162.5%;
+	letter-spacing: 5px;
+	word-spacing: 2px;
+}
+.footer__contact a span{
+	font-size: 28px;
+	color: maroon;
+	font-weight: bold;
+}
+.footer__contact a{
+	white-space:nowrap
+}
+.footer__contact p{
+	margin-bottom: 20px;
+}
+.footer__contact li{
+	margin-bottom: 20px;
+}
+/* ===============================Задаем стили footer=====================================*/
